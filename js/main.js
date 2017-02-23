@@ -114,7 +114,7 @@ function apiConnect(movie){
 	
 }
 
-function compareResult(apiMovie1, apiMovie2, movie1, movie2, notclick = false){
+function compareResult(apiMovie1, apiMovie2, movie1, movie2, notclick){
 	var result_director = false;
 	var result_actor = false;
 	
