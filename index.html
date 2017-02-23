@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta -->        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="Weronika Urbańczyk - zadanie testowe">
+        <meta name="description" content="Weronika Urbańczyk - zadanie testowe">
+        <meta name="author" content="Weronika Urbañczyk">
+        
+        <title>Zadanie testowe E NET PRODUCTION</title>
+        
+<!-- plugins -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap-3.3.4 -->
+        <link rel="stylesheet" href="plugins/bootstrap-3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="plugins/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+        <script src="plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <!-- Open sans -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        
+<!-- custom -->
+    <!-- css -->
+        <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+		<section class="gradient">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="my-form box-outer">
+							<div class="my-form box-header">
+								Wpisz nazwy dwóch filmów (w języku angielskim) i sprawdź co mają wspólnego!
+							</div>
+							<div class="my-form box-form">
+								<form class="my-form movies-form">
+									<div class="form-group">
+										<label for="title1">Tytuł filmu numer 1</label>
+										<input type="text" class="form-control" id="title1">
+										<div class="error" id="error-title1"></div>
+									</div>
+									<div class="form-group">
+										<label for="title2">Tytuł filmu numer 2</label>
+										<input type="text" class="form-control" id="title2">
+										<div class="error" id="error-title2"></div>
+									</div>
+									<button type="submit" class="btn btn-orange pull-right" id="movie-compare">Pokaż wyniki</button>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="my-result box-outer">
+							<div class="my-result box-header">
+								Co mają wspólnego?<br>
+							</div>
+							<div class="my-result box-result">
+								<div class="my-result loading-result">
+									<img src="img/load.gif" alt="loading...">
+								</div>
+								<div class="my-result no-result">
+									Przykro mi, nic nie znaleziono
+								</div>
+								<div class="my-result some-result">
+									<div class="my-result result-director">
+									</div>
+									<div class="my-result result-actor">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="old-result box-outer">
+							<div class="old-result box-header">
+								Poprzednie wyniki wyszukiwania
+								<button class="btn btn-xs btn-clear pull-right hidden-xs clear_result">Wyczyść wyniki</button>
+							</div>
+							<div class="clearfix"></div>
+							<div class="old-result box-result">
+								<table class="table old-result old-result-table" id="history-table">
+								</table>
+								<button class="btn btn-xs btn-clear pull-right visible-xs clear_result">Wyczyść wyniki</button>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+    </html>

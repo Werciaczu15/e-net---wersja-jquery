@@ -1,0 +1,114 @@
+html {
+    min-height: 100vh;
+}
+
+body{
+	font-size: 16px;
+	font-family: 'Open sans', Arial, Helvetia, sans-serif;
+}
+
+.gradient {
+	filter: none;
+}
+
+section{
+	min-height: 100vh;
+	background: rgba(255,201,196,1);
+	background: -moz-linear-gradient(top, rgba(255,201,196,1) 0%, rgba(236,130,129,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,201,196,1)), color-stop(100%, rgba(236,130,129,1)));
+	background: -webkit-linear-gradient(top, rgba(255,201,196,1) 0%, rgba(236,130,129,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,201,196,1) 0%, rgba(236,130,129,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,201,196,1) 0%, rgba(236,130,129,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,201,196,1) 0%, rgba(236,130,129,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc9c4', endColorstr='#ec8281', GradientType=0 );
+	background-repeat: no-repeat;
+}
+
+.box-outer{
+	background: #fff;
+	padding: 15px;
+	margin: 30px 0 15px 0;
+	-webkit-box-shadow: 0px 10px 5px -2px rgba(147,55,53,0.65);
+	-moz-box-shadow: 0px 10px 5px -2px rgba(147,55,53,0.65);
+	box-shadow: 0px 10px 5px -2px rgba(147,55,53,0.65);
+}
+
+.box-header{
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	padding: 10px 0 20px 0;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+/*form*/
+.box-form{
+	padding-top: 30px;
+}
+
+.my-form.movies-form label{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.my-form.movies-form input:focus{
+	outline: 0 none;
+	box-shadow: none;
+}
+
+.my-form.movies-form .btn-orange{
+	background: #CB2027;
+	color: #fff;
+	width: 40%;
+}
+
+
+.my-form.movies-form .error{
+	font-size: 12px;
+	color: #CB2027;
+	display: none;
+}
+
+/*result*/
+.my-result.box-result{
+	padding-top: 30px;
+}
+.my-result.no-result{
+	color: #CB2027;
+	display: none;
+}
+
+.my-result.loading-result{
+	text-align: center;
+	display: none;
+}
+
+.btn-clear{
+	background: #CB2027;
+	color: #fff;
+	display: none;
+}
+
+.btn-clear:hover{
+	color: #fff;
+}
+
+/*table*/
+.old-result-table tr{
+	border-bottom: 1px solid #eaeaea;
+}
+
+.old-result-table th{
+	padding: 0 3px;
+	background: #f2f2f2;
+}
+
+.old-result-table td{
+	padding: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .my-form.movies-form .btn-orange{
+        width: 100%;
+    }
+}
